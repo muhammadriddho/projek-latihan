@@ -1,0 +1,236 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Open Sans', sans-serif;
+}
+nav{
+    width: 100%;
+    background-color:rgb(218, 88, 99);
+    box-shadow: 2px 2px 10px 5px rgb(0, 0, 0);
+    justify-content: center;
+}
+img{
+   width: 300px;
+}
+.nav-cont{
+    display: flex;
+    justify-content:space-between;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    font-size: 30px;
+    margin-left: 30px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+ul{
+    display: flex;
+    padding-top: 20px;
+    padding-right:70px;
+    
+}
+ul li{
+    list-style: none;
+    padding: 20px;
+    display: block;
+    color: white;
+}
+ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+ul li::after{
+    content: "";
+    display: flex;
+    justify-content: center;
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: blue;
+    transition: all 1s ease-in-out;
+}
+ul li:hover::after{
+    width: 100%;
+    color: red;
+}
+ul li a:hover{
+    color: rgb(10, 228, 181);
+}
+ul li a:active{
+    color: red;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: rebeccapurple;
+}
+
+.content-head{
+ position: absolute;
+ top:200px;
+ left: 30px;
+ width: 40%;
+ padding-left: 20px;
+ height: 300px;
+
+}
+.content-head h2{
+    color: white;
+    cursor: default;
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+.header-text{
+    padding: 10px;
+}
+.content-head h1{
+    color: white;
+    cursor: default;
+    text-align: center;
+    background: rgb(10, 165, 192);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 90px;
+}
+.box-about{
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+    height: 30px;
+}
+.box-about::after{
+content: "";
+display: block;
+width: 100%;
+height: 10px;
+background-color: rgb(255, 208, 0);
+}
+.box-about a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-size:19px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.box-about a:hover{
+    color: rgb(10, 228, 181);
+}
+.box-content{
+    width: 100%;
+    min-height:max-content;
+    background: rgb(10, 165, 192);
+    display: block;
+    position: relative;
+}
+.container-supp{
+    width: 80%;
+    height: 250px;
+    cursor: default;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    align-items: center;
+    top: -70px;
+    left: 10%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 0px black;
+    z-index: 1000;
+}
+.box-prest{
+    width: 320px;
+    margin-left: 60px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    transition: all 0.5s ease-in-out;
+}
+.logo-box{
+    width: 35%;
+    height: 100%;
+}
+.logo-box h1{
+    font-size: 50px;
+    color: rgb(10, 165, 192);
+}
+.text-box{
+    padding-left: 20px;
+}
+.text-box h1{
+    font-size: 25px;
+    color:  rgb(10, 165, 192);
+    font-family:cursive;
+}
+.text-box p{
+    color: rgba(83, 81, 81, 0.678);
+    font-size: 15px;
+}
+.box-prest:hover{
+    box-shadow: 3px 3px 5px 4px rgba(0, 0, 0, 0.363);
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+.box-blank{
+    width: 100%;
+    min-height: 300px;
+    
+}
+.box-sambutan{
+    width: 100%;
+    padding-left: 20px;
+    height: 700px;
+    display: flex;
+
+}
+.carousel-indicators{
+    top: 0;
+    position: relative;
+    z-index: 1;
+}
+.photo-profile img{
+    width: 200px;
+}
+.sambutan{
+color:rgb(255, 255, 255);;
+margin-left: 130px;
+padding-bottom: 20px;
+text-decoration: none;
+font-weight: bold;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-top: 50px;
+}
+.box-textsambutan h1{
+font-style: italic;
+font-weight: bold; 
+font-size: 30px;
+color: black;
+text-decoration: none;
+}
+.box-textsambutan p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.box-textsambutan h2{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 19px;
+    font-family: 'Work Sans', sans-serif;
+}
